@@ -1,0 +1,281 @@
+{
+	"Print to console": {
+		"prefix": "lg",
+		"body": [
+			"console.log($0);"
+		],
+		"description": "Log output to console"
+	},
+	"alert": {
+		"prefix": "al",
+		"body": [
+			"alert('$0');"
+		],
+		"description": "alert"
+	},
+	"document.write": {
+		"prefix": "dw",
+		"body": [
+			"document.write('$0');"
+		],
+		"description": "document.write"
+	},
+	"prompt": {
+		"prefix": "po",
+		"body": [
+			"prompt('$0');"
+		],
+		"description": "prompt"
+	},
+	"confirm": {
+		"prefix": "cf",
+		"body": [
+			"confirm('$0');"
+		],
+		"description": "confirm"
+	},
+	"getElementById": {
+		"prefix": "dgi",
+		"body": [
+			"document.getElementById('$1');"
+		],
+		"description": "getElementById"
+	},
+	"do-while": {
+		"prefix": "dow",
+		"body": [
+			"do {",
+			"\t$0",
+			"} while();"
+		],
+		"description": "do-while"
+	},
+	"new Array": {
+		"prefix": "newa",
+		"body": [
+			"new Array($0);"
+		],
+		"description": "new Array"
+	},
+	"arr3": {
+		"prefix": "a3",
+		"body": [
+			"let arr = [1,2,3];"
+		],
+		"description": "arr3"
+	},
+	"arr5": {
+		"prefix": "a5",
+		"body": [
+			"let arr = [1,2,3,4,5];"
+		],
+		"description": "arr5"
+	},
+	"arr10": {
+		"prefix": "a10",
+		"body": [
+			"let arr = [1,2,3,4,5,6,7,8,9,10];"
+		],
+		"description": "arr10"
+	},
+	"fori": {
+		"prefix": "fori",
+		"body": [
+			"for(let i = 0;i < $1.length;i++) {",
+			"\t$0",
+			"}"
+		],
+		"description": "arr10"
+	},
+	"forj": {
+		"prefix": "forj",
+		"body": [
+			"for(let j = 0;j < $1.length;j++) {",
+			"\t$0",
+			"}"
+		],
+		"description": "arr10"
+	},
+	"optc": {
+		"prefix": "optc",
+		"body": [
+			"Object.prototype.toString.call($0);"
+		],
+		"description": "optc"
+	},
+	"new Obj": {
+		"prefix": "newo",
+		"body": [
+			"new Object();"
+		],
+		"description": "new Obj"
+	},
+	"getEleById": {
+		"prefix": "dgi",
+		"body": [
+			"document.getElementById('$0');"
+		],
+		"description": "getElementById"
+	},
+	"getEleByTag": {
+		"prefix": "dgt",
+		"body": [
+			"document.getElementsByTagName('$0');"
+		],
+		"description": "getElementByTag"
+	},
+	"getEleByClass": {
+		"prefix": "dgc",
+		"body": [
+			"document.getElementsByClassName('$0');"
+		],
+		"description": "getElementByClass"
+	},
+	"queryselector": {
+		"prefix": "doq",
+		"body": [
+			"document.querySelector('$0');"
+		],
+		"description": "querySelector"
+	},
+	"querySelectorAll": {
+		"prefix": "doa",
+		"body": [
+			"document.querySelectorAll('$0');"
+		],
+		"description": "querySelectorAll"
+	},
+	"onload": {
+		"prefix": "wod",
+		"body": [
+			"window.onload = function () {",
+			"\t$0",
+			"}"
+		],
+		"description": "window.onload"
+	},
+	"for": {
+		"prefix": "fo",
+		"body": [
+			"for(let i = 0;i < $0;i++) {",
+			"\t",
+			"}"
+		],
+		"description": "for"
+	},
+	"documentCreate": {
+		"prefix": "doc",
+		"body": [
+			"document.createElement('$0');"
+		],
+		"description": "doc"
+	},
+	"getStyle": {
+		"prefix": "wgs",
+		"body": [
+			"window.getComputedStyle($1)['$2']"
+		],
+		"description": "wgs"
+	},
+	"event": {
+		"prefix": "ew",
+		"body": [
+			"e = window.event || e;"
+		],
+		"description": "window.event"
+	},
+	"ajax": {
+		"prefix": "$.ajax",
+		"body": [
+			"$.ajax({",
+			"\ttype:'${1:get}',",
+			"\turl:'$2',",
+			"\tsuccess:function(res){",
+			"\t\t$3",
+			"\t}",
+			"})"
+		]
+	},
+	"mysql_chuanjian": {
+		"prefix": "mysql_chuanjian",
+		"body": [
+			"const mysql = require('mysql')",
+			"const db = mysql.createPool({",
+			"\thost:'127.0.0.1',//数据库的ip地址",
+			"\tuser:'root',//登录数据库的账号",
+			"\tpassword:'admin123',//登录数据库的密码",
+			"\tdatabase:'$1'//指定要操作哪个数据库",
+			"})"
+		]
+	},
+	"express_cj": {
+		"prefix": "express_cj",
+		"body": [
+			"// 导入 express 模块",
+			"const express = require('express')",
+			"// write your code here...",
+			"const app = express()",
+			"// 调用 app.listen 方法，指定端口号并启动web服务器",
+			"app.listen(80,()=>{",
+			"\tconsole.log('http://127.0.0.1')",
+			"\t})"
+		]
+	},
+	"inter_response": {
+		"prefix": "xyljq",
+		"body": [
+			"//axios响应拦截器",
+			"axios.interceptors.response.use(function(res){",
+			"\treturn res;//响应回来的数据",
+			"},function(error){",
+			"\tconsole.log(error)",
+			"})"
+		]
+	},
+	"inter_request": {
+		"prefix": "qqljq",
+		"body": [
+			"//axios请求拦截器",
+			"axios.interceptors.request.use(function(config){",
+			"\treturn config;//请求头配置项",
+			"},function(error){",
+			"\tconsole.log(error)",
+			"})"
+		]
+	},
+	"redirect": {
+		"prefix": "redirect",
+		"body": [
+			"redirect: '/$1'"
+		],
+		"description": "路由重定向配置redirect"
+	},
+	"httpGet": {
+		"prefix": "httpGet",
+		"body": [
+			"const { data: res } = await this.\\$http.get('$1', { params: $2 })$3"
+		],
+		"description": "$http.get"
+	},
+	"httpPost": {
+		"prefix": "httpPost",
+		"body": [
+			"const { data: res } = await this.\\$http.post('$1', $2)$3"
+		],
+		"description": "$http.post"
+	},
+	"httpPut": {
+		"prefix": "httpPut",
+		"body": [
+			"const { data: res } = await this.\\$http.put('$1', $2)$3"
+		],
+		"description": "$http.put"
+	},
+	"httpDelete": {
+		"prefix": "httpDelete",
+		"body": [
+			"const { data: res } = await this.\\$http.delete('$1')$2"
+		],
+		"description": "$http.delete"
+	}
+}
